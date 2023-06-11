@@ -34,7 +34,10 @@
             <td><%=ele.age%></td>
             <td><%=ele.role%></td>
             <td><%=ele.department%></td>
-            <td><%=ele.avatar%></td>
+            <td>
+                <img src="../upload/malenia-22-peakpx.jpg" alt="error">
+                <p><%=ele.avatar%></p>
+            </td>
             <td><a href="/update?id=<%=ele.id%>" class="btn btn-primary">Update</a></td>
             <td><a href="/delete?id=<%=ele.id%>" class="btn btn-danger">Delete</a></td>
         </tr>
