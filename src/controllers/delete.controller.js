@@ -9,7 +9,7 @@ class DeleteController{
     static async delete(req,res){
         let id=req.query.id;
         let model = await getModel.get(id);
-        let avatar = model[0].avatar;
+        let avatar = "src/upload/"+ model[0].avatar;
         fs.unlink(avatar,(err)=>{
             if(err) console.log(err.message)
         });
